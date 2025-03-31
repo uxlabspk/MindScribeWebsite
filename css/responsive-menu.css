@@ -1,0 +1,23 @@
+/* Mobile Menu Styles */
+@media (max-width: 576px) {
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transform: translateY(-150%);
+    transition: transform 0.3s ease;
+    z-index: 90;
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+    display: flex;
+  }
+}
