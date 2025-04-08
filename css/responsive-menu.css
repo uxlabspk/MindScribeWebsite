@@ -24,6 +24,10 @@
 
 /* Media Queries for Testimonials */
 @media (max-width: 991px) {
+  .testimonial-container {
+    margin: 0;
+  }
+
   .testimonial {
     min-width: calc(50% - 1rem);
   }

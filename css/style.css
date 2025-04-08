@@ -274,6 +274,10 @@ nav {
 }
 
 /* Testimonials Section */
+.testimonial-container {
+  margin: 0 80px;
+}
+
 .testimonials {
   padding: 4rem 0;
   background-color: var(--bg-light);
