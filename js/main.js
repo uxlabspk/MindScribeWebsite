@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const nextBtn = document.querySelector('.next-btn');
 
   let currentIndex = 0;
-  const maxIndex = testimonials.length - 1;
 
   // Get number of visible testimonials based on screen width
   function getVisibleCount() {
