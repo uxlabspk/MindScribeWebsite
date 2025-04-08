@@ -287,12 +287,12 @@ nav {
 .testimonial-track {
   display: flex;
   gap: 2rem;
-  width: 300%;
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
 }
 
 .testimonial {
   flex: 1;
+  min-width: calc(33.333% - 1.333rem);
   background-color: var(--white);
   border-radius: 0.5rem;
   padding: 2rem;
@@ -318,6 +318,8 @@ nav {
 .testimonial > p {
   margin-bottom: 2rem;
   color: var(--text-light);
+  height: 6rem;
+  overflow: hidden;
 }
 
 .user {
@@ -345,21 +347,15 @@ nav {
 
 .slider-controls {
   display: flex;
-  justify-content: space-between;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  transform: translateY(-50%);
-  padding: 0 -1rem;
-  pointer-events: none;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 .prev-btn, .next-btn {
   background: transparent;
   border: none;
   cursor: pointer;
-  pointer-events: auto;
 }
 
 /* Footer */

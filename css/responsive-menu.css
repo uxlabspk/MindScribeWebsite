@@ -21,3 +21,35 @@
     display: flex;
   }
 }
+
+/* Media Queries for Testimonials */
+@media (max-width: 991px) {
+  .testimonial {
+    min-width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-track {
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 1rem;
+  }
+
+  .testimonial {
+    min-width: calc(100% - 2rem);
+    scroll-snap-align: center;
+  }
+
+  .testimonial > p {
+    height: auto;
+  }
+
+  .slider-controls {
+    position: static;
+    transform: none;
+    margin-top: 1rem;
+  }
+}
