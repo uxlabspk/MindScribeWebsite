@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Credits - Your Journal</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive-menu.css">
+
   <style>
     /* Global Styles */
     :root {
@@ -17,94 +20,94 @@
       --white: #fff;
       --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     }
-    
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
       color: var(--text);
       background-color: var(--white);
     }
-    
+
     img {
       max-width: 100%;
       height: auto;
       display: block;
     }
-    
+
     .container {
       width: 100%;
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 20px;
     }
-    
-    a {
-      color: var(--secondary);
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    
-    a:hover {
-      color: var(--primary);
-    }
-    
+
+    /*a {*/
+    /*  color: var(--secondary);*/
+    /*  text-decoration: none;*/
+    /*  transition: color 0.3s ease;*/
+    /*}*/
+
+    /*a:hover {*/
+    /*  color: var(--primary);*/
+    /*}*/
+
     /* Header Styles */
-    header {
-      background-color: var(--primary);
-      color: var(--white);
-      padding: 15px 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: var(--shadow);
-    }
-    
-    .header-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .logo {
-      font-size: 24px;
-      font-weight: 700;
-    }
-    
-    .nav-menu {
-      display: flex;
-      list-style: none;
-    }
-    
-    .nav-menu li {
-      margin-left: 25px;
-    }
-    
-    .nav-menu a {
-      color: var(--white);
-      text-decoration: none;
-      font-weight: 500;
-      transition: opacity 0.3s;
-    }
-    
-    .nav-menu a:hover {
-      opacity: 0.8;
-    }
-    
-    .mobile-menu-toggle {
-      display: none;
-      background: none;
-      border: none;
-      color: var(--white);
-      font-size: 24px;
-      cursor: pointer;
-    }
-    
+    /*header {*/
+    /*  background-color: var(--primary);*/
+    /*  color: var(--white);*/
+    /*  padding: 15px 0;*/
+    /*  position: sticky;*/
+    /*  top: 0;*/
+    /*  z-index: 100;*/
+    /*  box-shadow: var(--shadow);*/
+    /*}*/
+
+    /*.header-container {*/
+    /*  display: flex;*/
+    /*  justify-content: space-between;*/
+    /*  align-items: center;*/
+    /*}*/
+
+    /*.logo {*/
+    /*  font-size: 24px;*/
+    /*  font-weight: 700;*/
+    /*}*/
+
+    /*.nav-menu {*/
+    /*  display: flex;*/
+    /*  list-style: none;*/
+    /*}*/
+
+    /*.nav-menu li {*/
+    /*  margin-left: 25px;*/
+    /*}*/
+
+    /*.nav-menu a {*/
+    /*  color: var(--white);*/
+    /*  text-decoration: none;*/
+    /*  font-weight: 500;*/
+    /*  transition: opacity 0.3s;*/
+    /*}*/
+
+    /*.nav-menu a:hover {*/
+    /*  opacity: 0.8;*/
+    /*}*/
+
+    /*.mobile-menu-toggle {*/
+    /*  display: none;*/
+    /*  background: none;*/
+    /*  border: none;*/
+    /*  color: var(--white);*/
+    /*  font-size: 24px;*/
+    /*  cursor: pointer;*/
+    /*}*/
+
     /* Credits Page Styles */
     .page-header {
       background-color: var(--light);
@@ -112,24 +115,24 @@
       text-align: center;
       margin-bottom: 40px;
     }
-    
+
     .page-header h1 {
       font-size: 42px;
       color: var(--dark);
       margin-bottom: 15px;
     }
-    
+
     .page-header p {
       font-size: 18px;
       color: var(--text-light);
       max-width: 700px;
       margin: 0 auto;
     }
-    
+
     .credits-section {
       padding: 40px 0;
     }
-    
+
     .credits-card {
       background-color: var(--white);
       border-radius: 8px;
@@ -137,7 +140,7 @@
       padding: 30px;
       margin-bottom: 40px;
     }
-    
+
     .credits-card h2 {
       font-size: 24px;
       color: var(--primary);
@@ -145,28 +148,28 @@
       padding-bottom: 10px;
       border-bottom: 2px solid var(--light);
     }
-    
+
     .credits-card p {
       margin-bottom: 15px;
       color: var(--text-light);
     }
-    
+
     .credits-card ul {
       margin-left: 20px;
       margin-bottom: 20px;
     }
-    
+
     .credits-card li {
       margin-bottom: 10px;
     }
-    
+
     .student-info {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-bottom: 30px;
     }
-    
+
     .student-photo {
       width: 150px;
       height: 150px;
@@ -175,14 +178,14 @@
       margin-bottom: 20px;
       box-shadow: var(--shadow);
     }
-    
+
     .tool-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       gap: 20px;
       margin-top: 30px;
     }
-    
+
     .tool-card {
       background-color: var(--light);
       border-radius: 8px;
@@ -193,86 +196,86 @@
       text-align: center;
       transition: transform 0.3s ease;
     }
-    
+
     .tool-card:hover {
       transform: translateY(-5px);
     }
-    
+
     .tool-icon {
       font-size: 36px;
       margin-bottom: 15px;
       color: var(--secondary);
     }
-    
+
     .tool-card h3 {
       margin-bottom: 10px;
     }
-    
+
     .resource-list {
       list-style: none;
     }
-    
+
     .resource-list li {
       padding: 15px;
       border-bottom: 1px solid var(--light);
       display: flex;
       align-items: center;
     }
-    
+
     .resource-list li:last-child {
       border-bottom: none;
     }
-    
+
     .resource-icon {
       margin-right: 15px;
       color: var(--secondary);
       font-size: 20px;
     }
-    
+
     .image-credits {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       gap: 20px;
       margin-top: 30px;
     }
-    
+
     .image-credit-card {
       border-radius: 8px;
       overflow: hidden;
       box-shadow: var(--shadow);
     }
-    
+
     .image-container {
       height: 180px;
       overflow: hidden;
     }
-    
+
     .image-container img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       transition: transform 0.3s ease;
     }
-    
+
     .image-credit-card:hover .image-container img {
       transform: scale(1.05);
     }
-    
+
     .image-info {
       padding: 15px;
       background-color: var(--white);
     }
-    
+
     .image-info h4 {
       margin-bottom: 5px;
       font-size: 16px;
     }
-    
+
     .image-info p {
       font-size: 14px;
       color: var(--text-light);
     }
-    
+
     /* Footer */
     footer {
       background-color: var(--dark);
@@ -280,20 +283,20 @@
       padding: 40px 0 20px;
       margin-top: 60px;
     }
-    
+
     .footer-container {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 30px;
     }
-    
+
     .footer-col h3 {
       font-size: 18px;
       margin-bottom: 20px;
       position: relative;
       padding-bottom: 10px;
     }
-    
+
     .footer-col h3::after {
       content: '';
       position: absolute;
@@ -303,25 +306,25 @@
       width: 40px;
       background-color: var(--primary);
     }
-    
+
     .footer-col ul {
       list-style: none;
     }
-    
+
     .footer-col ul li {
       margin-bottom: 10px;
     }
-    
+
     .footer-col ul li a {
       color: #bbb;
       transition: all 0.3s ease;
     }
-    
+
     .footer-col ul li a:hover {
       color: var(--white);
       padding-left: 8px;
     }
-    
+
     .footer-bottom {
       text-align: center;
       padding-top: 30px;
@@ -330,19 +333,19 @@
       color: #bbb;
       font-size: 14px;
     }
-    
+
     /* Responsive Styles */
     @media (max-width: 992px) {
       .footer-container {
         grid-template-columns: repeat(2, 1fr);
       }
     }
-    
+
     @media (max-width: 768px) {
       .mobile-menu-toggle {
         display: block;
       }
-      
+
       .nav-menu {
         position: fixed;
         top: 60px;
@@ -354,61 +357,68 @@
         padding: 30px;
         transition: left 0.3s ease;
       }
-      
+
       .nav-menu.active {
         left: 0;
       }
-      
+
       .nav-menu li {
         margin: 0 0 20px 0;
       }
-      
+
       .page-header h1 {
         font-size: 32px;
       }
-      
+
       .page-header p {
         font-size: 16px;
       }
     }
-    
+
     @media (max-width: 576px) {
       .footer-container {
         grid-template-columns: 1fr;
       }
-      
+
       .page-header {
         padding: 40px 0;
       }
-      
+
       .credits-card {
         padding: 20px;
       }
-      
+
       .tool-grid {
         grid-template-columns: 1fr;
       }
-      
+
       .image-credits {
         grid-template-columns: 1fr;
       }
     }
   </style>
+
 </head>
 <body>
   <!-- Header Section -->
   <header>
-    <div class="container header-container">
-      <div class="logo">Penzu</div>
-      <button class="mobile-menu-toggle">☰</button>
-      <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="features.html">Features</a></li>
-        <li><a href="credits.html" class="active">Credits</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <img src="/img/logo.png" alt="MindScribe Logo" />
+          <span>MindScribe</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/credits.html">Credit</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
     </div>
   </header>
 
@@ -428,7 +438,7 @@
         <h2>Developer Information</h2>
         <div class="student-info">
           <div class="student-photo">
-            <img src="/api/placeholder/150/150" alt="Student Photo">
+            <img src="https://placehold.co/150x150" alt="Student Photo">
           </div>
           <h3>John Smith</h3>
           <p>Student ID: S12345678</p>
@@ -549,7 +559,7 @@
         <div class="image-credits">
           <div class="image-credit-card">
             <div class="image-container">
-              <img src="/api/placeholder/300/180" alt="Journal Interface">
+              <img src="https://placehold.co/300x180" alt="Journal Interface">
             </div>
             <div class="image-info">
               <h4>Journal Interface</h4>
@@ -559,7 +569,7 @@
           
           <div class="image-credit-card">
             <div class="image-container">
-              <img src="/api/placeholder/300/180" alt="Person Journaling">
+              <img src="https://placehold.co/300x180" alt="Person Journaling">
             </div>
             <div class="image-info">
               <h4>Person Journaling</h4>
@@ -569,7 +579,7 @@
           
           <div class="image-credit-card">
             <div class="image-container">
-              <img src="/api/placeholder/300/180" alt="Mobile App View">
+              <img src="https://placehold.co/300x180" alt="Mobile App View">
             </div>
             <div class="image-info">
               <h4>Mobile App Interface</h4>
@@ -579,7 +589,7 @@
           
           <div class="image-credit-card">
             <div class="image-container">
-              <img src="/api/placeholder/300/180" alt="Team Photos">
+              <img src="https://placehold.co/300x180" alt="Team Photos">
             </div>
             <div class="image-info">
               <h4>Team Photos</h4>
@@ -595,7 +605,7 @@
         <p>This website design was inspired by and references the following websites and resources:</p>
         
         <ul>
-          <li>Penzu.com - For journaling platform functionality concepts</li>
+          <li>Reflectly - For journaling platform functionality concepts</li>
           <li>Day One App - For interface design inspiration</li>
           <li>MDN Web Docs - For implementation references and best practices</li>
           <li>CSS-Tricks - For layout and responsive design techniques</li>
@@ -607,46 +617,7 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <div class="footer-container">
-        <div class="footer-col">
-          <h3>Penzu</h3>
-          <p>Your private, 100% customizable online journal. Securely record your thoughts, memories, and life's journey.</p>
-        </div>
-        
-        <div class="footer-col">
-          <h3>Links</h3>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="features.html">Features</a></li>
-            <li><a href="credits.html">Credits</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-col">
-          <h3>Resources</h3>
-          <ul>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Journal Prompts</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Support</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-col">
-          <h3>Contact</h3>
-          <ul>
-            <li><a href="#">Email Us</a></li>
-            <li><a href="#">Feedback</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="footer-bottom">
-        <p>&copy; 2025 Penzu Journal. All rights reserved. | Academic Project by John Smith</p>
-      </div>
+      <p>© 2025 MindScribe, Inc</p>
     </div>
   </footer>
 
