@@ -266,7 +266,7 @@ nav {
   color: var(--text-light);
 }
 
-.benefit-image {}
+
 
 .benefit-image img {
   border-radius: 0.5rem;
@@ -624,9 +624,7 @@ footer {
     }
 
     .feature-icon {
-      background-color: #e8f4ff;
       color: #3080e3;
-      width: 60px;
       height: 60px;
       border-radius: 50%;
       display: flex;
@@ -694,7 +692,8 @@ footer {
     .platform-image {
       border-radius: 8px;
       overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      justify-items: anchor-center;
+
     }
 
     .platform-features h3 {

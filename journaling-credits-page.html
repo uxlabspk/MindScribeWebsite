@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credits - Your Journal</title>
+  <style>
+    /* Global Styles */
+    :root {
+      --primary: #ff4742;
+      --primary-dark: #e63e39;
+      --secondary: #3080e3;
+      --dark: #2c3e50;
+      --light: #f8f9fa;
+      --text: #333;
+      --text-light: #666;
+      --white: #fff;
+      --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background-color: var(--white);
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    a {
+      color: var(--secondary);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    a:hover {
+      color: var(--primary);
+    }
+    
+    /* Header Styles */
+    header {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow);
+    }
+    
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    
+    .nav-menu {
+      display: flex;
+      list-style: none;
+    }
+    
+    .nav-menu li {
+      margin-left: 25px;
+    }
+    
+    .nav-menu a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.3s;
+    }
+    
+    .nav-menu a:hover {
+      opacity: 0.8;
+    }
+    
+    .mobile-menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--white);
+      font-size: 24px;
+      cursor: pointer;
+    }
+    
+    /* Credits Page Styles */
+    .page-header {
+      background-color: var(--light);
+      padding: 60px 0;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .page-header h1 {
+      font-size: 42px;
+      color: var(--dark);
+      margin-bottom: 15px;
+    }
+    
+    .page-header p {
+      font-size: 18px;
+      color: var(--text-light);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    .credits-section {
+      padding: 40px 0;
+    }
+    
+    .credits-card {
+      background-color: var(--white);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      padding: 30px;
+      margin-bottom: 40px;
+    }
+    
+    .credits-card h2 {
+      font-size: 24px;
+      color: var(--primary);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--light);
+    }
+    
+    .credits-card p {
+      margin-bottom: 15px;
+      color: var(--text-light);
+    }
+    
+    .credits-card ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .credits-card li {
+      margin-bottom: 10px;
+    }
+    
+    .student-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    
+    .student-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow);
+    }
+    
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    
+    .tool-card {
+      background-color: var(--light);
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    
+    .tool-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .tool-icon {
+      font-size: 36px;
+      margin-bottom: 15px;
+      color: var(--secondary);
+    }
+    
+    .tool-card h3 {
+      margin-bottom: 10px;
+    }
+    
+    .resource-list {
+      list-style: none;
+    }
+    
+    .resource-list li {
+      padding: 15px;
+      border-bottom: 1px solid var(--light);
+      display: flex;
+      align-items: center;
+    }
+    
+    .resource-list li:last-child {
+      border-bottom: none;
+    }
+    
+    .resource-icon {
+      margin-right: 15px;
+      color: var(--secondary);
+      font-size: 20px;
+    }
+    
+    .image-credits {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    
+    .image-credit-card {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    
+    .image-container {
+      height: 180px;
+      overflow: hidden;
+    }
+    
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    
+    .image-credit-card:hover .image-container img {
+      transform: scale(1.05);
+    }
+    
+    .image-info {
+      padding: 15px;
+      background-color: var(--white);
+    }
+    
+    .image-info h4 {
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+    
+    .image-info p {
+      font-size: 14px;
+      color: var(--text-light);
+    }
+    
+    /* Footer */
+    footer {
+      background-color: var(--dark);
+      color: var(--white);
+      padding: 40px 0 20px;
+      margin-top: 60px;
+    }
+    
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+    
+    .footer-col h3 {
+      font-size: 18px;
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+    
+    .footer-col h3::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      width: 40px;
+      background-color: var(--primary);
+    }
+    
+    .footer-col ul {
+      list-style: none;
+    }
+    
+    .footer-col ul li {
+      margin-bottom: 10px;
+    }
+    
+    .footer-col ul li a {
+      color: #bbb;
+      transition: all 0.3s ease;
+    }
+    
+    .footer-col ul li a:hover {
+      color: var(--white);
+      padding-left: 8px;
+    }
+    
+    .footer-bottom {
+      text-align: center;
+      padding-top: 30px;
+      margin-top: 30px;
+      border-top: 1px solid #444;
+      color: #bbb;
+      font-size: 14px;
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 992px) {
+      .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .mobile-menu-toggle {
+        display: block;
+      }
+      
+      .nav-menu {
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        width: 80%;
+        height: calc(100vh - 60px);
+        flex-direction: column;
+        background-color: var(--primary);
+        padding: 30px;
+        transition: left 0.3s ease;
+      }
+      
+      .nav-menu.active {
+        left: 0;
+      }
+      
+      .nav-menu li {
+        margin: 0 0 20px 0;
+      }
+      
+      .page-header h1 {
+        font-size: 32px;
+      }
+      
+      .page-header p {
+        font-size: 16px;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .footer-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .page-header {
+        padding: 40px 0;
+      }
+      
+      .credits-card {
+        padding: 20px;
+      }
+      
+      .tool-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .image-credits {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">Penzu</div>
+      <button class="mobile-menu-toggle">☰</button>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="credits.html" class="active">Credits</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Credits & Attributions</h1>
+      <p>Acknowledging the tools, resources, and inspirations that helped create this journaling platform.</p>
+    </div>
+  </section>
+
+  <!-- Credits Content -->
+  <section class="credits-section">
+    <div class="container">
+      <!-- Student Information -->
+      <div class="credits-card">
+        <h2>Developer Information</h2>
+        <div class="student-info">
+          <div class="student-photo">
+            <img src="/api/placeholder/150/150" alt="Student Photo">
+          </div>
+          <h3>John Smith</h3>
+          <p>Student ID: S12345678</p>
+          <p>Web Development Course - Spring 2025</p>
+        </div>
+        <p>This journaling website was created as part of a web development course project. The goal was to design and implement a responsive, user-friendly online journaling platform that works across all devices.</p>
+      </div>
+      
+      <!-- Development Tools -->
+      <div class="credits-card">
+        <h2>Development Tools & Technologies</h2>
+        <p>The following tools and technologies were used to create this website:</p>
+        
+        <div class="tool-grid">
+          <div class="tool-card">
+            <div class="tool-icon">⚙️</div>
+            <h3>HTML5</h3>
+            <p>Used for structuring all webpage content and implementing semantic markup.</p>
+          </div>
+          
+          <div class="tool-card">
+            <div class="tool-icon">🎨</div>
+            <h3>CSS3</h3>
+            <p>Used for styling, animations, and responsive design implementation.</p>
+          </div>
+          
+          <div class="tool-card">
+            <div class="tool-icon">📜</div>
+            <h3>JavaScript</h3>
+            <p>Used for interactive elements, form validation, and dynamic content.</p>
+          </div>
+          
+          <div class="tool-card">
+            <div class="tool-icon">💻</div>
+            <h3>Visual Studio Code</h3>
+            <p>Primary code editor used throughout development.</p>
+          </div>
+          
+          <div class="tool-card">
+            <div class="tool-icon">🔄</div>
+            <h3>Git & GitHub</h3>
+            <p>Used for version control and project management.</p>
+          </div>
+          
+          <div class="tool-card">
+            <div class="tool-icon">📱</div>
+            <h3>Chrome DevTools</h3>
+            <p>Used for testing, debugging, and responsive design implementation.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- AI Tools -->
+      <div class="credits-card">
+        <h2>AI Assistance & Resources</h2>
+        <p>The following AI tools were used to assist in the development process:</p>
+        
+        <ul class="resource-list">
+          <li>
+            <span class="resource-icon">🤖</span>
+            <div>
+              <h4>Claude by Anthropic</h4>
+              <p>Used for generating code snippets, debugging assistance, and design suggestions.</p>
+            </div>
+          </li>
+          <li>
+            <span class="resource-icon">🎭</span>
+            <div>
+              <h4>Midjourney</h4>
+              <p>Used for generating concept images and visual inspirations for the website design.</p>
+            </div>
+          </li>
+          <li>
+            <span class="resource-icon">📊</span>
+            <div>
+              <h4>ChatGPT</h4>
+              <p>Used for content creation and code optimization suggestions.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- External Libraries -->
+      <div class="credits-card">
+        <h2>External Libraries & Resources</h2>
+        <p>The following external libraries and resources were used in this project:</p>
+        
+        <ul class="resource-list">
+          <li>
+            <span class="resource-icon">📚</span>
+            <div>
+              <h4>Google Fonts</h4>
+              <p>Used for typography throughout the website.</p>
+            </div>
+          </li>
+          <li>
+            <span class="resource-icon">🧩</span>
+            <div>
+              <h4>Font Awesome</h4>
+              <p>Used for icons and visual elements.</p>
+            </div>
+          </li>
+          <li>
+            <span class="resource-icon">📐</span>
+            <div>
+              <h4>Normalize.css</h4>
+              <p>Used for consistent rendering across browsers.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Image Credits -->
+      <div class="credits-card">
+        <h2>Image Credits</h2>
+        <p>All images used on this website are either original creations, AI-generated, or sourced from the following:</p>
+        
+        <div class="image-credits">
+          <div class="image-credit-card">
+            <div class="image-container">
+              <img src="/api/placeholder/300/180" alt="Journal Interface">
+            </div>
+            <div class="image-info">
+              <h4>Journal Interface</h4>
+              <p>Source: Original design mockup</p>
+            </div>
+          </div>
+          
+          <div class="image-credit-card">
+            <div class="image-container">
+              <img src="/api/placeholder/300/180" alt="Person Journaling">
+            </div>
+            <div class="image-info">
+              <h4>Person Journaling</h4>
+              <p>Source: Unsplash by Jane Smith</p>
+            </div>
+          </div>
+          
+          <div class="image-credit-card">
+            <div class="image-container">
+              <img src="/api/placeholder/300/180" alt="Mobile App View">
+            </div>
+            <div class="image-info">
+              <h4>Mobile App Interface</h4>
+              <p>Source: Original design mockup</p>
+            </div>
+          </div>
+          
+          <div class="image-credit-card">
+            <div class="image-container">
+              <img src="/api/placeholder/300/180" alt="Team Photos">
+            </div>
+            <div class="image-info">
+              <h4>Team Photos</h4>
+              <p>Source: Generated with AI (Midjourney)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Inspiration -->
+      <div class="credits-card">
+        <h2>Inspiration & References</h2>
+        <p>This website design was inspired by and references the following websites and resources:</p>
+        
+        <ul>
+          <li>Penzu.com - For journaling platform functionality concepts</li>
+          <li>Day One App - For interface design inspiration</li>
+          <li>MDN Web Docs - For implementation references and best practices</li>
+          <li>CSS-Tricks - For layout and responsive design techniques</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>Penzu</h3>
+          <p>Your private, 100% customizable online journal. Securely record your thoughts, memories, and life's journey.</p>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="credits.html">Credits</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Journal Prompts</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="#">Email Us</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Penzu Journal. All rights reserved. | Academic Project by John Smith</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle functionality
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    menuToggle.addEventListener('click', function() {
+      navMenu.classList.toggle('active');
+      menuToggle.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+    });
+    
+    // Close menu when clicking on a link (mobile)
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        navMenu.classList.remove('active');
+        menuToggle.textContent = '☰';
+      });
+    });
+    
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        if (this.getAttribute('href') !== '#') {
+          e.preventDefault();
+          
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
