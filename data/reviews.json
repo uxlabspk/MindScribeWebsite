@@ -1,0 +1,1113 @@
+[
+    {
+        "review_id": 1,
+        "date": "2023-05-10",
+        "review_title": "Simply the Best",
+        "review_content": "I've tried other journaling apps, but none compare to this one. The features are exactly what I was looking for, and it's easy to use. Browser storage is a huge plus too, so I never forget my entries.",
+        "stars": 5,
+        "user": {
+            "name": "Charlie",
+            "location": "Birmingham, UK"
+        }
+    },
+    {
+        "review_id": 2,
+        "date": "2025-03-18",
+        "review_title": "smooth and fast",
+        "review_content": "This app has really made journaling fun again! I love how it's so user-friendly, and how the design makes it feel personal. Plus, the app is always smooth and fast!",
+        "stars": 5,
+        "user": {
+            "name": "Diana",
+            "location": "Leeds, UK"
+        }
+    },
+    {
+        "review_id": 3,
+        "date": "2025-01-25",
+        "review_title": "Great for Daily Journaling",
+        "review_content": "This app is great for daily journaling. It's easy to use and has some nice features 🏷️📚📝.",
+        "stars": 5,
+        "user": {
+            "name": "Jackie K",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 4,
+        "date": "2024-02-27",
+        "review_title": "My new favorite app",
+        "review_content": "I can't believe how much I enjoy journaling now. This app makes it so easy to document my thoughts, goals, and ideas. I also really like the ability to write reminders in the journal - it helps me.",
+        "stars": 5,
+        "user": {
+            "name": "Eve",
+            "location": "Glasgow, UK"
+        }
+    },
+    {
+        "review_id": 5,
+        "date": "2025-02-15",
+        "review_title": "Recommended",
+        "review_content": "",
+        "stars": 5,
+        "user": {
+            "name": "Bob C",
+            "location": "London, UK"
+        }
+    },
+    {
+        "review_id": 6,
+        "date": "2025-01-28",
+        "review_title": "Satisfactory",
+        "review_content": "Satisfactory app. It might be improved with more options maybe?",
+        "stars": 3,
+        "user": {
+            "name": "Ashley P",
+            "location": "San Jose, USA"
+        }
+    },
+    {
+        "review_id": 7,
+        "date": "2025-03-05",
+        "review_title": "Nice",
+        "review_content": "Works well! 😊",
+        "stars": 4,
+        "user": {
+            "name": "Aiko Y",
+            "location": "Brisbane, Australia"
+        }
+    },
+    {
+        "review_id": 8,
+        "date": "2025-03-05",
+        "review_title": "Can't fault it",
+        "review_content": "I cannot even think of one thing I would improve with this app.",
+        "stars": 5,
+        "user": {
+            "name": "",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 9,
+        "date": "2025-01-30",
+        "review_title": "Five stars!!!!!",
+        "review_content": "Yeah, I'm giving it five stars. That's five GOLD stars.",
+        "stars": 5,
+        "user": {
+            "name": "Gracie G",
+            "location": "Glasgow, UK"
+        }
+    },
+    {
+        "review_id": 10,
+        "date": "2023-04-23",
+        "review_title": "Glitchy",
+        "review_content": "Glitchy",
+        "stars": 3,
+        "user": {
+            "name": "Ivy",
+            "location": "Edinburgh, UK"
+        }
+    },
+    {
+        "review_id": 11,
+        "date": "2025-01-01",
+        "review_title": "Fun",
+        "review_content": "I remember when I was a kid and I had a diary. This is like that, but digital. I like it. I'm 80 years old.",
+        "stars": 5,
+        "user": {
+            "name": "Nan",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 12,
+        "date": "2025-01-01",
+        "review_title": "Oh! Beautiful!",
+        "review_content": "The developer of this app is so impresively talented. I love this app. I love it so so much. Sometimes I just open the app and look at it. It's beautiful.",
+        "stars": 5,
+        "user": {
+            "name": "",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 13,
+        "date": "2023-12-01",
+        "review_title": "I dislike reading and writing",
+        "review_content": "I opened the app and saw a prompt. I don't know, it seemed like a lot of words. Where are the buttons to press? Why can't I just press a button to know what my thoughts are?",
+        "stars": 1,
+        "user": {
+            "name": "Aaron",
+            "location": "Exeter, UK"
+        }
+    },
+    {
+        "review_id": 81,
+        "date": "2025-03-10",
+        "review_title": "Reliable app",
+        "review_content": "Quality app. Very reliable. It does what it promises, but it could use a few more features strong encryption.",
+        "stars": 4,
+        "user": {
+            "name": "Charlie G",
+            "location": "Newcastle upon Tyne, UK"
+        }
+    },
+    {
+        "review_id": 15,
+        "date": "2025-01-01",
+        "review_title": "Worrying",
+        "review_content": "Why would anyone want to write a journal? Your words will just be stolen by AI and used to control you. I'm not falling for it.",
+        "stars": 1,
+        "user": {
+            "name": "Spacey M",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 16,
+        "date": "2025-01-01",
+        "review_title": "Fell short of my expectations",
+        "review_content": "This app could be really good, but it falls short in many areas. It doesn't let me organize my entries in any meaningful way, and the database is unreliable. The app doesn't feel personal.",
+        "stars": 3,
+        "user": {
+            "name": "JJ",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 17,
+        "date": "2025-01-01",
+        "review_title": "Frustrating to Use",
+        "review_content": "I'm not impressed. While the idea is good, the app frequently freezes, and the interface feels clunky. I was hoping for a smooth journaling experience, but instead, I'm struggling with basic functionality. Will probably uninstall soon if the issues aren't fixed.",
+        "stars": 3,
+        "user": {
+            "name": "John P",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 18,
+        "date": "2025-01-01",
+        "review_title": "Too basic for my needs",
+        "review_content": "This app is too simple and doesn't have the features I'm looking for. I can't track my completely everything I want, there are no appropriate templates for me, and there's no way to tag many of my interests. It's ok for very basic journaling, but nothing more.",
+        "stars": 3,
+        "user": {
+            "name": "Kobe",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 19,
+        "date": "2025-01-01",
+        "review_title": "Unpolished",
+        "review_content": "The concept is good, but it needs a lot more work.",
+        "stars": 3,
+        "user": {
+            "name": "Donald D",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 20,
+        "date": "2025-01-01",
+        "review_title": "Worst journaling app",
+        "review_content": "Do not download it. I recommend instead to use my app. It's so much better. If you download my app please leave a 5-star review and let me know what you think. I'm looking forward to my first review. Thanks.",
+        "stars": 1,
+        "user": {
+            "name": "Mark Z",
+            "location": "San Francisco, USA"
+        }
+    },
+    {
+        "review_id": 21,
+        "date": "2025-01-01",
+        "review_title": "No Problems yet",
+        "review_content": "",
+        "stars": 5,
+        "user": {
+            "name": "",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 22,
+        "date": "2025-01-01",
+        "review_title": "A waste of time",
+        "review_content": "Keeping a journal is a waste of my precious time. Why should I spend my time doing this?",
+        "stars": 3,
+        "user": {
+            "name": "",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 23,
+        "date": "2025-01-22",
+        "review_title": "I think it's great",
+        "review_content": "I can objectively say this is great app.",
+        "stars": 5,
+        "user": {
+            "name": "",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 24,
+        "date": "2025-02-18",
+        "review_title": "Recommended",
+        "review_content": "If I was asked to recommend a journaling app, I would definitely recommend this one.",
+        "stars": 5,
+        "user": {
+            "name": "Nicola F",
+            "location": "Gateshead, UK"
+        }
+    },
+    {
+        "review_id": 25,
+        "date": "2025-02-12",
+        "review_title": "Great 👍",
+        "review_content": "👍👍👍👍👍👍👍",
+        "stars": 5,
+        "user": {
+            "name": "",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 26,
+        "date": "2025-03-08",
+        "review_title": "Good Job",
+        "review_content": "Hey, good job!",
+        "stars": 4,
+        "user": {
+            "name": "",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 27,
+        "date": "2025-01-25",
+        "review_title": "I've found something I like!",
+        "review_content": "Wow, I've found something I like. It's not often I find something I like, but I like this. I like it a lot. I like it so much I'm going to tell my friends about it. I like it.",
+        "stars": 5,
+        "user": {
+            "name": "",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 28,
+        "date": "2025-01-28",
+        "review_title": "Great App, Needs a Few Tweaks",
+        "review_content": "I really like this app for journaling. It's easy to use and has a clean interface. However, I wish it had more customization options for fonts and colors.",
+        "stars": 4,
+        "user": {
+            "name": "Alice R",
+            "location": "Newcastle upon Tyne, UK"
+        }
+    },
+    {
+        "review_id": 29,
+        "date": "2025-02-15",
+        "review_title": "Very Useful",
+        "review_content": "This app is very useful for keeping track of my thoughts and feelings. The prompts are great, but I would love to see more themes available.",
+        "stars": 4,
+        "user": {
+            "name": "Bob C",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 30,
+        "date": "2025-02-18",
+        "review_title": "Almost Perfect",
+        "review_content": "This app is almost perfect for my journaling needs. It's easy to use and has a nice interface, but it could use more options for organizing entries.",
+        "stars": 4,
+        "user": {
+            "name": "Eve P",
+            "location": "Newcastle upon Tyne, UK"
+        }
+    },
+    {
+        "review_id": 31,
+        "date": "2025-03-05",
+        "review_title": "Very good app",
+        "review_content": "I find this app very good for daily journaling. It's user-friendly and has some nice features.",
+        "stars": 5,
+        "user": {
+            "name": "Frank G",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 32,
+        "date": "2025-01-30",
+        "review_title": "Nice",
+        "review_content": "This is a nice app for journaling. It's easy to use and has a clean design. I would like to see more features like mood tracking and better export options.",
+        "stars": 4,
+        "user": {
+            "name": "Shaun V",
+            "location": "Newcastle upon Tyne, UK"
+        }
+    },
+    {
+        "review_id": 33,
+        "date": "2025-02-12",
+        "review_title": "Good experience",
+        "review_content": "I've had a good experience with this app. I think the developers understand the importance of UX. The app is reliable and easy to use, but it could have a few more features.",
+        "stars": 4,
+        "user": {
+            "name": "",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 34,
+        "date": "2025-03-08",
+        "review_title": "Handy for keeping track",
+        "review_content": "This app is very handy for keeping track of my thoughts and feelings. It's nice to use and has a good interface.",
+        "stars": 5,
+        "user": {
+            "name": "",
+            "location": "Newcastle upon Tyne, UK"
+        }
+    },
+    {
+        "review_id": 35,
+        "date": "2025-01-15",
+        "review_title": "Too basic",
+        "review_content": "I was hoping for a bit more from this app. It's very basic, and it's missing key features. It's usable, but it's just too limited for serious journaling.",
+        "stars": 3,
+        "user": {
+            "name": "Carlos M",
+            "location": "Newcastle upon Tyne, UK"
+        }
+    },
+    {
+        "review_id": 36,
+        "date": "2025-02-10",
+        "review_title": "Not worth the download",
+        "review_content": "This app has so much potential, but it's just not there yet. The design is uninspired, the app freezes constantly, and there are almost no features. It's good for very minimal journaling, but not much else. I won't be using it again.",
+        "stars": 2,
+        "user": {
+            "name": "Marion L",
+            "location": "Stockholm, Sweden"
+        }
+    },
+    {
+        "review_id": 37,
+        "date": "2024-05-07",
+        "review_title": "Pause for thought",
+        "review_content": "I love this app... kind of. If I write something I should get some sort of feedback, or maybe treat.",
+        "stars": 4,
+        "user": {
+            "name": "Fluffy",
+            "location": "Norwich, UK"
+        }
+    },
+    {
+        "review_id": 38,
+        "date": "2025-01-01",
+        "review_title": "So much better that the others",
+        "review_content": "This app is so much better than the other journal apps I've tried. Most journalling apps seem to be just a low quality student project, but this one is actually good. I like the prompts and the way it looks. I'm going to keep using it forever.",
+        "stars": 5,
+        "user": {
+            "name": "Dong B",
+            "location": "London, UK"
+        }
+    },
+    {
+        "review_id": 39,
+        "date": "2025-01-01",
+        "review_title": "I have a whole new life",
+        "review_content": "I was working so hard on my University coursework that I stopped noticing the world around me. I downloaded this app and started writing about my day. I realised that I was missing out on so much. I started to take breaks and go for walks. I even started to notice the little things, like the way the sun shines through the trees. I'm so grateful for this app. It's changed my life. I'm giving up University to become a poet. I'm going to live in a treehouse and write about the world. Thank you, app developers. You've sent me on a journey I never thought I'd take.",
+        "stars": 5,
+        "user": {
+            "name": "Christopher C",
+            "location": "Bristol, UK"
+        }
+    },
+    {
+        "review_id": 40,
+        "date": "2025-02-10",
+        "review_title": "Great",
+        "review_content": "Very useful app! 👍",
+        "stars": 5,
+        "user": {
+            "name": "Hiroshi",
+            "location": "Melbourne, Australia"
+        }
+    },
+    {
+        "review_id": 41,
+        "date": "2025-03-05",
+        "review_title": "Decent, but needs more work",
+        "review_content": "The app is okay for journaling, but there are a lot of bugs and slowdowns. It's not bad, but it's not amazing either.",
+        "stars": 4,
+        "user": {
+            "name": "Luca R",
+            "location": "Newcastle upon Tyne, UK"
+        }
+    },
+    {
+        "review_id": 42,
+        "date": "2025-01-20",
+        "review_title": "Good but limited.",
+        "review_content": "The app works well for basic journaling, but I feel like it's missing a lot of features. There are no advanced options for categorizing entries, and the tracking could be more detailed. Not a bad app, but could use more flexibility.",
+        "stars": 4,
+        "user": {
+            "name": "Sofia G",
+            "location": "London, UK"
+        }
+    },
+    {
+        "review_id": 43,
+        "date": "2025-01-12",
+        "review_title": "Nearly what I was hoping for",
+        "review_content": "The app is fine for daily journaling, but it doesn't have many useful features. It would be great to have more options. Overall, it's usable, but there's a lot of room for improvement.",
+        "stars": 4,
+        "user": {
+            "name": "Miguel A",
+            "location": "Newcastle upon Tyne, UK"
+        }
+    },
+    {
+        "review_id": 44,
+        "date": "2025-02-22",
+        "review_title": "Solid",
+        "review_content": "The app works, but I've encountered a few bugs that prevent me from fully enjoying it. Sometimes my entries don't save properly, and I've had issues with writing about learning HTML. I want to write about tags like <h1>h1</h1>, <br>, <hr> and <p>p</p> but they just mess up how my diary looks.",
+        "stars": 3,
+        "user": {
+            "name": "Isabella R",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 45,
+        "date": "2025-03-08",
+        "review_title": "Could be more",
+        "review_content": "It's a decent app for journaling, but I feel like the app could offer more depth. It's okay for basic journaling, and that's about it.",
+        "stars": 4,
+        "user": {
+            "name": "Mateo S",
+            "location": "Newcastle upon Tyne, UK"
+        }
+    },
+    {
+        "review_id": 46,
+        "date": "2025-01-28",
+        "review_title": "Easy but basic",
+        "review_content": "The app is easy to use, but it's a bit too basic for my liking. I'd love to see more features. It's decent but doesn't have everything I need.",
+        "stars": 4,
+        "user": {
+            "name": "Ana P",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 47,
+        "date": "2025-02-14",
+        "review_title": "Fine for simple journaling",
+        "review_content": "If you're just looking for a no nonsense journaling app, this will do the job. It's clean and functional.",
+        "stars": 5,
+        "user": {
+            "name": "Thiago M",
+            "location": "Perth, Australia"
+        }
+    },
+    {
+        "review_id": 48,
+        "date": "2025-03-03",
+        "review_title": "Improvements needed",
+        "review_content": "I'm using the app, but it's not quite as good as I hoped. While the design is clean and simple, the app crashes occasionally, and some features are missing. It has potential, but I'll be waiting for some updates before I fully recommend it.",
+        "stars": 4,
+        "user": {
+            "name": "Elena K",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 49,
+        "date": "2025-01-25",
+        "review_title": "Enjoying the app",
+        "review_content": "I really enjoy using this app. The design is sleek, and it's super easy to use. However, I'd love to see more themes and customization options. Overall, it's still a fantastic tool for journaling.",
+        "stars": 4,
+        "user": {
+            "name": "Nikolai V",
+            "location": "Brisbane, Australia"
+        }
+    },
+    {
+        "review_id": 50,
+        "date": "2025-02-28",
+        "review_title": "Missing details",
+        "review_content": "I like the app a lot. It's smooth and very functional. However, the lack of password protection is a bit of a drawback for me. It would be a nice addition to keep my entries secure from my wicked stepmother.",
+        "stars": 4,
+        "user": {
+            "name": "Li M",
+            "location": "Newcastle upon Tyne, UK"
+        }
+    },
+    {
+        "review_id": 51,
+        "date": "2025-03-22",
+        "review_title": "Quite helpful",
+        "review_content": "This app has been a great help for my journaling practice. It's simple, effective, and easy to use. My only gripe is that I can't fully customize everything I want 🤔. Otherwise, I'd give it five stars.",
+        "stars": 4,
+        "user": {
+            "name": "Ananya P",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 52,
+        "date": "2025-01-11",
+        "review_title": "Good but some bugs",
+        "review_content": "Overall, this is a great journaling app. I love the interface and the organization features. However, I've noticed a few bugs when trying to use it. I hope this gets fixed in a future update.",
+        "stars": 4,
+        "user": {
+            "name": "Ravi S",
+            "location": "Newcastle upon Tyne, UK"
+        }
+    },
+    {
+        "review_id": 53,
+        "date": "2025-03-15",
+        "review_title": "Beautiful and functional",
+        "review_content": "The design of this app is gorgeous, and it's super easy to navigate. I love how I can organize my entries. It's been a wonderful addition to my self-care routine.",
+        "stars": 5,
+        "user": {
+            "name": "Alicia",
+            "location": "London, UK"
+        }
+    },
+    {
+        "review_id": 54,
+        "date": "2025-01-01",
+        "review_title": "Needs major revamp",
+        "review_content": "I don't understand the hype around this app. It's very basic, lacks essential features and has a clunky interface. I've also had trouble with using different devices. I'll be looking for alternatives.",
+        "stars": 2,
+        "user": {
+            "name": "Emily F",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 55,
+        "date": "2025-03-05",
+        "review_title": "Fine",
+        "review_content": "",
+        "stars": 5,
+        "user": {
+            "name": "",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 56,
+        "date": "2025-01-20",
+        "review_title": "Could be worse",
+        "review_content": "",
+        "stars": 5,
+        "user": {
+            "name": "",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 57,
+        "date": "2025-01-20",
+        "review_title": "Could Be Better",
+        "review_content": "The app is okay, but it could be better with more features.",
+        "stars": 4,
+        "user": {
+            "name": "Emma O",
+            "location": "Houston, USA"
+        }
+    },
+    {
+        "review_id": 58,
+        "date": "2025-02-25",
+        "review_title": "Nice features",
+        "review_content": "All of the features in this app are just what I need. It's like the developers read my mind.",
+        "stars": 5,
+        "user": {
+            "name": "David D",
+            "location": "Phoenix, USA"
+        }
+    },
+    {
+        "review_id": 59,
+        "date": "2024-07-22",
+        "review_title": "Perfect for growth as a person",
+        "review_content": "I've been using this app for a month now, and I've noticed such a positive impact on my mental clarity and overall well-being. It's a great way to track personal growth and reflect on the important things in life.",
+        "stars": 5,
+        "user": {
+            "name": "Bob",
+            "location": "Manchester, UK"
+        }
+    },
+    {
+        "review_id": 60,
+        "date": "2025-02-07",
+        "review_title": "Almost perfect!",
+        "review_content": "I love this app. It has everything I need for journaling—great interface, simple layout, and useful features. My only complaint is the weird logo they gave the app.",
+        "stars": 4,
+        "user": {
+            "name": "Yuna K",
+            "location": "Manchester, UK"
+        }
+    },
+    {
+        "review_id": 61,
+        "date": "2025-03-12",
+        "review_title": "Good, but needs AI",
+        "review_content": "This is a great app for journaling, and I use it daily. The daily prompts are helpful, but I wish it had a few more advanced AI features, like the ability to make recommendations and analyse images. Still a solid 4 stars!",
+        "stars": 4,
+        "user": {
+            "name": "Minho L",
+            "location": "Newcastle upon Tyne, UK"
+        }
+    },
+    {
+        "review_id": 62,
+        "date": "2025-01-18",
+        "review_title": "Used it for a while",
+        "review_content": "I've been using this app for a while, and I'm mostly happy with it. It's user-friendly, and I appreciate the features. I would love to see better search functionality.",
+        "stars": 4,
+        "user": {
+            "name": "Chen W",
+            "location": "Dallas, USA"
+        }
+    },
+    {
+        "review_id": 63,
+        "date": "2025-01-01",
+        "review_title": "Disappointing experience",
+        "review_content": "I was excited to try this app, but it's been a letdown. The app crashes frequently, and I've lost a couple of journal entries. It also lacks basic features like password protection and more customization. Definitely needs work.",
+        "stars": 2,
+        "user": {
+            "name": "",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 64,
+        "date": "2025-01-01",
+        "review_title": "Not what I expected",
+        "review_content": "The app feels unfinished. While it's easy to use, it doesn't offer much beyond basic journaling. There are no advanced features, and the design is very plain. I was hoping for more.",
+        "stars": 4,
+        "user": {
+            "name": "",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 65,
+        "date": "2025-01-01",
+        "review_title": "Barely functional",
+        "review_content": "I've had issues with the app not saving my entries properly, and it can be slow at times. The lack of any form of security (like a passcode) makes me feel uneasy about storing personal thoughts in it. Not a great experience overall.",
+        "stars": 2,
+        "user": {
+            "name": "",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 66,
+        "date": "2023-08-14",
+        "review_title": "Life-changing technology",
+        "review_content": "This app has helped me stay more organized and mindful. The prompts are great for when I'm feeling stuck, and the ability to look back on my previous entries has been incredibly helpful for personal growth. I feel I'm getting stronger every day.",
+        "stars": 5,
+        "user": {
+            "name": "Frank",
+            "location": "Sydney, Australia"
+        }
+    },
+    {
+        "review_id": 67,
+        "date": "2024-04-09",
+        "review_title": "Energising and motivating",
+        "review_content": "I've found using this app an energising experience. It's a great way to start the day and get my thoughts in order. I've been using it for a few months now and it's been a great addition to my routine.",
+        "stars": 5,
+        "user": {
+            "name": "Grace",
+            "location": "Bristol, UK"
+        }
+    },
+    {
+        "review_id": 68,
+        "date": "2024-10-05",
+        "review_title": "Buggy",
+        "review_content": "Ok but a bit buggy",
+        "stars": 4,
+        "user": {
+            "name": "Henry",
+            "location": "Sheffield, UK"
+        }
+    },
+    {
+        "review_id": 69,
+        "date": "2025-03-18",
+        "review_title": "Good",
+        "review_content": "Good app, good colors.",
+        "stars": 5,
+        "user": {
+            "name": "Sarah",
+            "location": "Sydney, Australia"
+        }
+    },
+    {
+        "review_id": 70,
+        "date": "2025-01-01",
+        "review_title": "Looks bad",
+        "review_content": "I haven't used this app, but it looks bad.",
+        "stars": 1,
+        "user": {
+            "name": "",
+            "location": "London, UK"
+        }
+    },
+    {
+        "review_id": 71,
+        "date": "2025-01-01",
+        "review_title": "No support",
+        "review_content": "It doesn't work on my Nokia 3310. Apps should work on all devices. We are being forced to upgrade to smartphones. I don't like it.",
+        "stars": 1,
+        "user": {
+            "name": "Nokia L",
+            "location": "Phoenix, USA"
+        }
+    },
+    {
+        "review_id": 72,
+        "date": "2025-01-12",
+        "review_title": "Useful",
+        "review_content": "Useful app for daily journaling, but I get distracted too easily by my other apps.",
+        "stars": 4,
+        "user": {
+            "name": "James K",
+            "location": "Dallas, USA"
+        }
+    },
+    {
+        "review_id": 73,
+        "date": "2025-02-22",
+        "review_title": "Needs more funcitonality",
+        "review_content": "The app is good, but it needs to do a bit more to make it worth my time.",
+        "stars": 4,
+        "user": {
+            "name": "Jessica T",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 74,
+        "date": "2025-03-08",
+        "review_title": "Good for most users",
+        "review_content": "Good for basic use, but it lacks advanced features for serious journaling.",
+        "stars": 4,
+        "user": {
+            "name": "Daniel Y",
+            "location": "London, UK"
+        }
+    },
+    {
+        "review_id": 75,
+        "date": "2025-01-28",
+        "review_title": "Satisfactory",
+        "review_content": "Satisfactory app, but it could be better designed.",
+        "stars": 4,
+        "user": {
+            "name": "Ade P",
+            "location": "Adelaide, Australia"
+        }
+    },
+    {
+        "review_id": 76,
+        "date": "2025-01-20",
+        "review_title": "Could be better",
+        "review_content": "The app is okay, but it could be better with more things to do. 🤔",
+        "stars": 3,
+        "user": {
+            "name": "Emily R",
+            "location": "Liverpool, UK"
+        }
+    },
+    {
+        "review_id": 77,
+        "date": "2025-01-15",
+        "review_title": "Awesome",
+        "review_content": "Love this app! 😊",
+        "stars": 5,
+        "user": {
+            "name": "Ron W",
+            "location": "Liverpool, UK"
+        }
+    },
+    {
+        "review_id": 78,
+        "date": "2025-01-28",
+        "review_title": "A+",
+        "review_content": "An A+ app",
+        "stars": 5,
+        "user": {
+            "name": "Chinedu B",
+            "location": "London, UK"
+        }
+    },
+    {
+        "review_id": 79,
+        "date": "2025-03-10",
+        "review_title": "Will use again",
+        "review_content": "I only write a journal entry once a year, but I'll probably use this app again next year.",
+        "stars": 5,
+        "user": {
+            "name": "Juma",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 80,
+        "date": "2025-01-20",
+        "review_title": "Good",
+        "review_content": "This is a good thing! 👍",
+        "stars": 5,
+        "user": {
+            "name": "Chen W",
+            "location": "Perth, Australia"
+        }
+    },
+    {
+        "review_id": 81,
+        "date": "2025-01-19",
+        "review_title": "I just wanted a pizza",
+        "review_content": "I thought this app was going to help me order a pizza. I wrote 'pizza' a few times and nothing happened. I waited 15 minutes and still no pizza. I'll give it 4 stars just because I guess it's not a fast food app.",
+        "stars": 4,
+        "user": {
+            "name": "Bella",
+            "location": "Bath, UK"
+        }
+    },
+    {
+        "review_id": 82,
+        "date": "2025-01-22",
+        "review_title": "Enjoyable + simple + effective",
+        "review_content": "I enjoy using this app for journaling. It's simple and effective, but it lacks some advanced features that I would like to see in future updates.",
+        "stars": 4,
+        "user": {
+            "name": "Amina G",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 83,
+        "date": "2025-02-25",
+        "review_title": "Nicely implemented",
+        "review_content": "The idea is well intentioned but nothing new. What makes the app stand out is the implementation. It's brilliantly done.",
+        "stars": 5,
+        "user": {
+            "name": "",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 84,
+        "date": "2025-03-18",
+        "review_title": "Good",
+        "review_content": "",
+        "stars": 4,
+        "user": {
+            "name": "",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 85,
+        "date": "2025-01-12",
+        "review_title": "Useful App",
+        "review_content": "The app is useful for anyone who wants to keep a journal. If you don't want to keep a journal, then avoid. But for everyone else, it's a useful app to have.",
+        "stars": 5,
+        "user": {
+            "name": "",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 86,
+        "date": "2025-02-22",
+        "review_title": "Does what it says on the tin",
+        "review_content": "",
+        "stars": 4,
+        "user": {
+            "name": "Wanjiku",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 87,
+        "date": "2025-03-08",
+        "review_title": "Perfect for occasional use",
+        "review_content": "I just need something I can occasionally write in. This app meets my needs.",
+        "stars": 5,
+        "user": {
+            "name": "",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 88,
+        "date": "2025-01-28",
+        "review_title": "Satisfactory",
+        "review_content": "",
+        "stars": 4,
+        "user": {
+            "name": "",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 89,
+        "date": "2025-01-15",
+        "review_title": "Decent app",
+        "review_content": "The app is decent for basic journaling but lacks a complete set of features.",
+        "stars": 4,
+        "user": {
+            "name": "John D",
+            "location": "New York, USA"
+        }
+    },
+    {
+        "review_id": 90,
+        "date": "2025-02-10",
+        "review_title": "Mixed feelings",
+        "review_content": "Good app, but I feel the app could have a few more improvements.",
+        "stars": 4,
+        "user": {
+            "name": "Jane S",
+            "location": "Los Angeles, USA"
+        }
+    },
+    {
+        "review_id": 91,
+        "date": "2025-03-05",
+        "review_title": "Acceptable",
+        "review_content": "Acceptable performance, but could use more features like gamification or motivational messaging.",
+        "stars": 4,
+        "user": {
+            "name": "Michael B",
+            "location": "Chicago, USA"
+        }
+    },
+    {
+        "review_id": 92,
+        "date": "2025-01-15",
+        "review_title": "Decent App",
+        "review_content": "",
+        "stars": 4,
+        "user": {
+            "name": "",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 93,
+        "date": "2025-02-10",
+        "review_title": "Good",
+        "review_content": "",
+        "stars": 3,
+        "user": {
+            "name": "",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 94,
+        "date": "2025-02-25",
+        "review_title": "Nice",
+        "review_content": "Nice features. One suggestion: I'd like more options for organizing entries 📚📚📚",
+        "stars": 5,
+        "user": {
+            "name": "David M",
+            "location": ""
+        }
+    },
+    {
+        "review_id": 95,
+        "date": "2025-03-18",
+        "review_title": "Lacks colour options",
+        "review_content": "Good app, I'd love some more options for colors 🎨 you know. The default choice of colours is ok",
+        "stars": 4,
+        "user": {
+            "name": "Sarah L",
+            "location": "Manchester, UK"
+        }
+    },
+    {
+        "review_id": 96,
+        "date": "2025-01-12",
+        "review_title": "Useful App",
+        "review_content": "Useful app for daily journaling, but it could use more features...",
+        "stars": 4,
+        "user": {
+            "name": "James H",
+            "location": "San Antonio, USA"
+        }
+    },
+    {
+        "review_id": 97,
+        "date": "2025-02-22",
+        "review_title": "Needs more tags",
+        "review_content": "The app is good. I'd like to tag entries 🏷️ and maybe have a word cloud or something.",
+        "stars": 3,
+        "user": {
+            "name": "Priya T",
+            "location": "Oxford, UK"
+        }
+    },
+    {
+        "review_id": 98,
+        "date": "2023-06-11",
+        "review_title": "Perfect for my ... procrastination",
+        "review_content": "I've spent more time journaling than actually getting on with life. I'm not sure if that's a good thing or a bad thing.",
+        "stars": 4,
+        "user": {
+            "name": "Rachel",
+            "location": "San Diego, USA"
+        }
+    },
+    {
+        "review_id": 99,
+        "date": "2025-02-24",
+        "review_title": "My ideas won't stay organized",
+        "review_content": "I was hoping this app would help me sort out my chaotic thoughts and ideas. Now it just helps me remember how chaotic my life is. Mission... failed!",
+        "stars": 3,
+        "user": {
+            "name": "Hatomi H",
+            "location": "Cambridge, UK"
+        }
+    },
+    {
+        "review_id": 100,
+        "date": "2025-03-08",
+        "review_title": "Good not great",
+        "review_content": "Good for most of my use, but it lacks advanced features for the serious journaling I do 📖. I'm very serious about my journal - as everyone should be!",
+        "stars": 4,
+        "user": {
+            "name": "Danny",
+            "location": "Melbourne, Australia"
+        }
+    },
+    {
+        "review_id": 101,
+        "date": "2025-03-25",
+        "review_title": "The joy of journaling",
+        "review_content": "This app is fantastic! The simplicity and thoughtful design make it a joy to use. It's incredibly user-friendly, and the clean interface allows for easy navigation. I love how everything is intuitively laid out, making journaling a seamless experience. Highly recommend for anyone looking for a straightforward and well-designed journaling app. This app makes a great addition to my productivity tools, and I can't imagine my daily routine without it. Thank you to the developers for creating such a wonderful app!",
+        "stars": 5,
+        "user": {
+            "name": "Alex T",
+            "location": "Sydney, Australia"
+        }
+    }
+]
