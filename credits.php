@@ -18,9 +18,9 @@
                 <span>MindScribe</span>
             </div>
             <ul class="nav-links">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/credits.html">Credit</a></li>
+                <li><a href="/index.php">Home</a></li>
+                <li><a href="/about.php">About</a></li>
+                <li><a href="/credits.php">Credit</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>

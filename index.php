@@ -11,26 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
-<header>
-    <div class="container">
-        <nav>
-            <div class="logo">
-                <img src="/img/logo.png" alt="MindScribe Logo"/>
-                <span>MindScribe</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/credits.html">Credit</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </div>
-</header>
+<?php include 'includes/header.php' ?>
 
 <main>
     <!-- Hero Section -->
@@ -130,11 +111,7 @@
 
 </main>
 
-<footer>
-    <div class="container">
-        <p>© 2025 MindScribe, Inc</p>
-    </div>
-</footer>
+<?php include 'includes/footer.php' ?>
 
 <script src="/js/main.js" type="module"></script>
 </body>
