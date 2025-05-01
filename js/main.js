@@ -138,41 +138,245 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // fetching the json data
+// fetch('/data/reviews.json')
+//     .then(response => response.json())
+//     .then(reviews => {
+//         const reviewContainer = document.getElementById('testimonialsContainer');
+//
+//         // Filter meaningful reviews
+//         const filtered = reviews.filter(r => r.review_content && r.review_content.trim() !== '');
+//
+//         filtered.slice(0, 5).forEach(review => {
+//             const stars = '★'.repeat(review.stars) + '☆'.repeat(5 - review.stars);
+//             const name = review.user.name || 'Anonymous';
+//             const location = review.user.location ? ` from ${review.user.location}` : '';
+//             const date = new Date(review.date).toLocaleDateString();
+//
+//
+//             const reviewHTML = `
+//           <div class="testimonial">
+//               <div class="stars">
+//                   <span class="star">${stars}</span>
+//               </div>
+//               <h3>${review.review_title}</h3>
+//               <p>${review.review_content}</p>
+//               <div class="user">
+//                   <img src="/img/user.png" alt="Sarah T"/>
+//                   <div class="user-info">
+//                       <h4>${name} ${location}</h4>
+//                       <p>${date}</p>
+//                   </div>
+//               </div>
+//           </div>
+//       `;
+//
+//             reviewContainer.innerHTML += reviewHTML;
+//         });
+//     })
+//     .catch(error => {
+//         console.error('Error loading reviews:', error);
+//     });
+
+// Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the slider elements
+    const track = document.querySelector('.testimonial-track');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+
+    // Variables for drag functionality
+    let isDragging = false;
+    let startPos = 0;
+    let currentTranslate = 0;
+    let prevTranslate = 0;
+
+    // Initialize slider after reviews are loaded
+    function initSlider() {
+        const testimonials = document.querySelectorAll('.testimonial');
+        if (!testimonials.length) return;
+
+        // Set initial position
+        currentTranslate = 0;
+        setSliderPosition();
+
+        // Add click events to buttons
+        prevBtn.addEventListener('click', moveToPrev);
+        nextBtn.addEventListener('click', moveToNext);
+
+        // Add drag events
+        track.addEventListener('mousedown', dragStart);
+        track.addEventListener('touchstart', dragStart);
+        track.addEventListener('mouseup', dragEnd);
+        track.addEventListener('touchend', dragEnd);
+        track.addEventListener('mouseleave', dragEnd);
+        track.addEventListener('mousemove', drag);
+        track.addEventListener('touchmove', drag);
+    }
+
+    // Move to the previous slide
+    function moveToPrev() {
+        const testimonialWidth = document.querySelector('.testimonial').offsetWidth + 32; // Width + gap
+        currentTranslate += testimonialWidth;
+
+        // Prevent scrolling too far left
+        if (currentTranslate > 0) {
+            currentTranslate = 0;
+        }
+
+        setSliderPosition();
+    }
+
+    // Move to the next slide
+    function moveToNext() {
+        const testimonialWidth = document.querySelector('.testimonial').offsetWidth + 32; // Width + gap
+        const trackWidth = track.scrollWidth;
+        const containerWidth = document.querySelector('.testimonial-slider').offsetWidth;
+
+        currentTranslate -= testimonialWidth;
+
+        // Prevent scrolling too far right
+        if (Math.abs(currentTranslate) > (trackWidth - containerWidth)) {
+            currentTranslate = -(trackWidth - containerWidth);
+        }
+
+        setSliderPosition();
+    }
+
+    // Set the slider position with smooth animation
+    function setSliderPosition() {
+        track.style.transform = `translateX(${currentTranslate}px)`;
+    }
+
+    // Functions for drag functionality
+    function dragStart(event) {
+        isDragging = true;
+        startPos = getPositionX(event);
+        prevTranslate = currentTranslate;
+
+        // Change cursor while dragging
+        track.style.cursor = 'grabbing';
+    }
+
+    function drag(event) {
+        if (isDragging) {
+            const currentPosition = getPositionX(event);
+            const diff = currentPosition - startPos;
+            currentTranslate = prevTranslate + diff;
+
+            // Apply the movement
+            setSliderPosition();
+        }
+    }
+
+    function dragEnd() {
+        isDragging = false;
+
+        // Snap to nearest testimonial
+        const testimonialWidth = document.querySelector('.testimonial').offsetWidth + 32;
+        const trackWidth = track.scrollWidth;
+        const containerWidth = document.querySelector('.testimonial-slider').offsetWidth;
+
+        // Prevent overscrolling
+        if (currentTranslate > 0) {
+            currentTranslate = 0;
+        } else if (Math.abs(currentTranslate) > (trackWidth - containerWidth)) {
+            currentTranslate = -(trackWidth - containerWidth);
+        }
+
+        // Reset cursor
+        track.style.cursor = 'grab';
+        setSliderPosition();
+    }
+
+    function getPositionX(event) {
+        return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+    }
+
+    // Wait for reviews to load before initializing slider
+    // Use a MutationObserver to detect when testimonials are added
+    const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            if (mutation.addedNodes.length && document.querySelectorAll('.testimonial').length > 0) {
+                initSlider();
+                observer.disconnect();
+            }
+        });
+    });
+
+    // Start observing the testimonial container
+    if (track) {
+        observer.observe(track, { childList: true });
+    }
+
+    // If reviews are loaded before this script runs
+    if (document.querySelectorAll('.testimonial').length > 0) {
+        initSlider();
+    }
+});
+
+// Modified reviews loader to work with the slider
 fetch('/data/reviews.json')
     .then(response => response.json())
     .then(reviews => {
         const reviewContainer = document.getElementById('testimonialsContainer');
 
+        // Clear any existing content
+        reviewContainer.innerHTML = '';
+
         // Filter meaningful reviews
         const filtered = reviews.filter(r => r.review_content && r.review_content.trim() !== '');
 
-        filtered.slice(0, 5).forEach(review => {
+        // Add all filtered reviews instead of just 5
+        filtered.forEach(review => {
             const stars = '★'.repeat(review.stars) + '☆'.repeat(5 - review.stars);
             const name = review.user.name || 'Anonymous';
             const location = review.user.location ? ` from ${review.user.location}` : '';
             const date = new Date(review.date).toLocaleDateString();
 
-
             const reviewHTML = `
-          <div class="testimonial">
-              <div class="stars">
-                  <span class="star">${stars}</span>
-              </div>
-              <h3>${review.review_title}</h3>
-              <p>${review.review_content}</p>
-              <div class="user">
-                  <img src="/img/user.png" alt="Sarah T"/>
-                  <div class="user-info">
-                      <h4>${name} ${location}</h4>
-                      <p>${date}</p>
-                  </div>
-              </div>
-          </div>
-      `;
+                <div class="testimonial">
+                    <div class="stars">
+                        <span class="star">${stars}</span>
+                    </div>
+                    <h3>${review.review_title || 'Review'}</h3>
+                    <p>${review.review_content}</p>
+                    <div class="user">
+<!--                        <img src="/img/user.png" alt="${name}"/>-->
+                        <div class="user-info">
+                            <h4>${name}${location}</h4>
+                            <p>${date}</p>
+                        </div>
+                    </div>
+                </div>
+            `;
 
             reviewContainer.innerHTML += reviewHTML;
         });
     })
     .catch(error => {
         console.error('Error loading reviews:', error);
+
+        // Add some fallback testimonials in case the fetch fails
+        const reviewContainer = document.getElementById('testimonialsContainer');
+
+        for (let i = 0; i < 2; i++) {
+            const fallbackHTML = `
+                <div class="testimonial">
+                    <div class="stars">
+                        <span class="star">★★★★★</span>
+                    </div>
+                    <h3>Great Experience</h3>
+                    <p>This is a fallback testimonial that appears when the data couldn't be loaded. The actual content would be much more interesting!</p>
+                    <div class="user">
+                        <img src="/img/user.png" alt="User"/>
+                        <div class="user-info">
+                            <h4>Sample User</h4>
+                            <p>Jan 1, 2025</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            reviewContainer.innerHTML += fallbackHTML;
+        }
     });
