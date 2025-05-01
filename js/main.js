@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //     });
 
 // Wait for the DOM to be fully loaded
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Get the slider elements
     const track = document.querySelector('.testimonial-track');
     const prevBtn = document.querySelector('.prev-btn');
@@ -305,7 +305,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Start observing the testimonial container
     if (track) {
-        observer.observe(track, { childList: true });
+        observer.observe(track, {childList: true});
     }
 
     // If reviews are loaded before this script runs

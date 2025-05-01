@@ -1,59 +1,59 @@
 /* Mobile Menu Styles */
 @media (max-width: 576px) {
-  .nav-links {
-    position: fixed;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background-color: var(--white);
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 0;
-    gap: 1.5rem;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    transform: translateY(-150%);
-    transition: transform 0.3s ease;
-    z-index: 90;
-  }
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+        gap: 1.5rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        transform: translateY(-150%);
+        transition: transform 0.3s ease;
+        z-index: 90;
+    }
 
-  .nav-links.active {
-    transform: translateY(0);
-    display: flex;
-  }
+    .nav-links.active {
+        transform: translateY(0);
+        display: flex;
+    }
 }
 
 /* Media Queries for Testimonials */
 @media (max-width: 991px) {
-  .testimonial-container {
-    margin: 0;
-  }
+    .testimonial-container {
+        margin: 0;
+    }
 
-  .testimonial {
-    min-width: calc(50% - 1rem);
-  }
+    .testimonial {
+        min-width: calc(50% - 1rem);
+    }
 }
 
 @media (max-width: 768px) {
-  .testimonial-track {
-    flex-direction: row;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    padding-bottom: 1rem;
-  }
+    .testimonial-track {
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 1rem;
+    }
 
-  .testimonial {
-    min-width: calc(100% - 2rem);
-    scroll-snap-align: center;
-  }
+    .testimonial {
+        min-width: calc(100% - 2rem);
+        scroll-snap-align: center;
+    }
 
-  .testimonial > p {
-    height: auto;
-  }
+    .testimonial > p {
+        height: auto;
+    }
 
-  .slider-controls {
-    position: static;
-    transform: none;
-    margin-top: 1rem;
-  }
+    .slider-controls {
+        position: static;
+        transform: none;
+        margin-top: 1rem;
+    }
 }
