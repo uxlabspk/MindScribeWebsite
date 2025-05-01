@@ -341,7 +341,7 @@ fetch('/data/reviews.json')
                     <h3>${review.review_title || 'Review'}</h3>
                     <p>${review.review_content}</p>
                     <div class="user">
-<!--                        <img src="/img/user.png" alt="${name}"/>-->
+                        <img src="/img/user.svg" alt="${name}"/>
                         <div class="user-info">
                             <h4>${name}${location}</h4>
                             <p>${date}</p>
