@@ -334,7 +334,7 @@ fetch('/data/reviews.json')
             const date = new Date(review.date).toLocaleDateString();
 
             const reviewHTML = `
-                <div class="testimonial">
+                <div class="testimonial" style="height: 300px">
                     <div class="stars">
                         <span class="star">${stars}</span>
                     </div>
