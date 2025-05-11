@@ -47,10 +47,10 @@
             <h2>Developer Information</h2>
             <div class="student-info">
                 <div class="student-photo">
-                    <img src="img/profile img.png" alt="Student Photo">
+                    <img src="img/user.jpg" alt="Student Photo">
                 </div>
-                <h3>John Smith</h3>
-                <p>Student ID: S12345678</p>
+                <h3> Maryam Albalam</h3>
+                <p>Student ID: W22073324</p>
                 <p>Web Development Course - Spring 2025</p>
             </div>
             <p>This journaling website was created as part of a web development course project. The goal was to design
